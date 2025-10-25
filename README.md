@@ -1,109 +1,121 @@
-# 🚀 Customer Churn Analysis
+# 📊 Customer Churn Analysis (TCA Project)
 
-### 📓 Notebook: [Project TCA.ipynb](./Project%20TCA.ipynb)
-
-### 🧾 Summary Report: [Customer Churn Analysis Summary.pdf](./Customer%20Churn%20Analysis%20Summary.pdf)
+![Banner](https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png)
 
 ---
 
-## 🎯 Problem Statement
-
-This project dives deep into a telecom dataset of **7,043 customers** to uncover what truly drives **customer churn** — why customers leave and what factors influence their decisions.
-With **26.54%** of customers having already churned, the challenge is clear: **identify the pain points** and **build strategies to retain customers** before they walk away.
-
----
-
-## ⚙️ Project Workflow
-
-### 1️⃣ **Data Loading**
-
-* Imported `Customer Churn.csv` into a Pandas DataFrame.
-* Used `.head()` and `.info()` to understand structure, columns, and data types.
-
-### 2️⃣ **Data Cleaning & Preprocessing**
-
-* Replaced blank spaces in `TotalCharges` (for zero-tenure customers) with “0” and converted it to float.
-* Verified data quality — no missing values or duplicate `customerID`s found.
-* Converted `SeniorCitizen` values (0/1) into human-readable labels ("No"/"Yes").
-
-### 3️⃣ **Exploratory Data Analysis (EDA)**
-
-Uncovered patterns and churn behavior using **Matplotlib** and **Seaborn** visualizations:
-
-📊 **Key Analyses:**
-
-* **Churn Distribution:** 26.54% overall churn rate.
-* **Demographics:** Gender and senior citizen status examined for churn impact.
-* **Tenure:** High churn observed among **newer customers**.
-* **Contract Type:** **Month-to-Month** plans show highest churn.
-* **Payment Method:** **Electronic Check** users churn more often.
-* **Services Impact:** Evaluated how features like `TechSupport`, `OnlineBackup`, and `DeviceProtection` affect churn — customers **without** these add-ons are more likely to leave.
-
-### 4️⃣ **Insight Synthesis**
-
-Combined data stories into actionable insights — summarized in the [Summary PDF](./Customer%20Churn%20Analysis%20Summary.pdf).
+## 🧠 Overview
+Customer churn — when customers stop using a company’s service — is a major challenge in subscription-based industries.  
+This project, **Telecom Customer Churn Analysis (TCA)**, identifies the *key drivers of churn* using data analytics and visualization techniques.  
+It aims to help businesses **retain customers**, **reduce losses**, and **increase satisfaction**.
 
 ---
 
-## 📈 Key Visualizations
+## 📂 Project Structure
 
-### 🔹 Churn Distribution
-
-![Churn Pie Chart](https://user-images.githubusercontent.com/102996550/...)
-*(Replace placeholder with actual uploaded image link)*
-
-### 🔹 Churn vs Tenure
-
-![Churn vs Tenure Histogram](https://user-images.githubusercontent.com/102996550/...)
-*(Replace placeholder with actual uploaded image link)*
+| 📁 File | 📝 Description |
+|----------|----------------|
+| `📓 Project TCA.ipynb` | Jupyter Notebook containing data cleaning, analysis, and visualization. |
+| `📄 Customer Churn Raw Data.csv` | Dataset of 7,043 telecom customers with features like demographics, contract, billing, and services. |
+| `📘 Customer Churn Analysis Summary.pdf` | Executive summary highlighting findings and recommendations. |
 
 ---
 
-## 💡 Major Insights (from Summary Report)
+## 🎯 Objectives
 
-### 🔍 **Key Findings**
-
-* **Overall Churn:** 26.54% (1,869 out of 7,043 customers).
-* **Contract Type:** Month-to-Month users churn **2x more** than long-term ones.
-* **Tenure:** New customers show highest churn risk.
-* **Payment Method:** Electronic Check users are the most unstable group.
-* **Senior Citizens:** Churn at **41.7%**, nearly double non-seniors.
-* **Internet Service:** **Fiber Optic** users churn more than DSL users.
-* **Add-On Services:** Lack of `OnlineSecurity`, `Backup`, or `TechSupport` increases churn risk dramatically.
+✅ Identify the **main factors** influencing customer churn.  
+✅ Analyze how **contract type, payment method, and tenure** affect churn.  
+✅ Provide **data-backed recommendations** for retention.  
+✅ Build foundation for **future predictive modeling**.
 
 ---
 
-## 🧠 Conclusion
+## 📈 Key Insights
 
-Customer churn is concentrated among:
-
-* **Low-tenure** users
-* **Month-to-month** contracts
-* **Senior citizens**
-* **Fiber Optic** internet users
-* **Electronic Check** payment users
-* And customers **without** additional security/support services
-
-The story is simple — **engagement and perceived value** determine loyalty.
-
----
-
-## 🎯 Recommendations
-
-To reduce churn and boost retention:
-
-1. **Incentivize long-term contracts** (1-year / 2-year plans).
-2. **Engage new customers early** — the first few months are critical.
-3. **Investigate senior & fiber user dissatisfaction** — pricing, service quality, or complexity.
-4. **Simplify or upgrade payment experiences**, especially for Electronic Check users.
-5. **Promote add-on services** like Tech Support and Online Security to improve user stickiness.
+| 🔍 Factor | 📊 Observation | 💡 Insight |
+|------------|----------------|-------------|
+| **Churn Rate** | ~26.54% (1,869 out of 7,043 customers) | Indicates significant customer loss. |
+| **Contract Type** | Month-to-month customers churn the most. | Promote longer-term contracts for stability. |
+| **Tenure** | New customers (low tenure) churn early. | Focus on onboarding experience. |
+| **Payment Method** | Electronic Check users have high churn. | Simplify payment or add incentives. |
+| **Senior Citizens** | 41.7% churn rate vs 23.6% for non-seniors. | Provide senior-friendly support programs. |
+| **Internet Type** | Fiber Optic users churn more. | Address pricing and service satisfaction. |
+| **Add-on Services** | Lack of security/tech support = higher churn. | Bundle value-added services to retain users. |
 
 ---
 
-## 🏁 Final Thoughts
+## 📊 Data Visualization Preview
 
-This analysis goes beyond numbers — it helps businesses **see the human side of churn**.
-By understanding what makes customers stay or leave, telecom companies can design better experiences, improve satisfaction, and ultimately **build loyalty that lasts**.
-✨ *Data doesn’t lie — it tells the story you need to hear.*
+| Visualization | Description |
+|----------------|-------------|
+| ![Churn Distribution](https://quickchart.io/chart/render/sf-fake1) | Overall churn vs active customer ratio. |
+| ![Contract vs Churn](https://quickchart.io/chart/render/sf-fake2) | Month-to-month contracts dominate churn. |
+| ![Tenure Impact](https://quickchart.io/chart/render/sf-fake3) | Short-tenure customers are more likely to leave. |
+| ![Payment Method](https://quickchart.io/chart/render/sf-fake4) | Electronic check users churn more. |
+
+> 🧩 *These visuals demonstrate patterns in the dataset. You can replace links with your actual chart URLs or images.*
 
 ---
+
+## 🧰 Technologies Used
+
+| 🧠 Tool / Library | 💡 Purpose |
+|-------------------|-------------|
+| **Python** 🐍 | Core programming language |
+| **Pandas / NumPy** | Data cleaning and manipulation |
+| **Matplotlib / Seaborn** | Data visualization |
+| **Jupyter Notebook** | Interactive analysis environment |
+| **Excel / CSV** | Dataset handling |
+| **ReportLab / PDF** | Summary report creation |
+
+---
+
+## 💡 Key Findings Summary
+
+| Area | Observation | Recommendation |
+|-------|--------------|----------------|
+| **Contracts** | Month-to-month users churn heavily | Offer discounts for yearly plans |
+| **Tenure** | Early-stage users churn fast | Improve onboarding & support |
+| **Payment Mode** | Electronic check = higher churn | Introduce secure digital methods |
+| **Senior Users** | High churn among senior citizens | Provide senior assistance plans |
+| **Fiber Users** | Fiber customers leaving more | Review pricing & quality |
+| **Add-on Services** | Customers with Tech Support stay longer | Bundle security/backup add-ons |
+
+---
+
+## 🚀 Recommendations
+
+- 💬 **Promote Longer Contracts:** Incentivize 1-year or 2-year plans.  
+- 🎁 **Improve Early Experience:** Engage customers during first few months.  
+- 💳 **Simplify Payments:** Reduce friction for electronic check users.  
+- 👵 **Senior Citizen Support:** Offer special loyalty or helpdesk programs.  
+- 🧩 **Upsell Add-ons:** Highlight benefits of security and tech support services.  
+- 🌐 **Monitor Fiber Service:** Address performance or pricing pain points.
+
+---
+
+## 🧭 Future Scope
+
+🔮 Build **Machine Learning Models** to predict churn probability.  
+📊 Integrate **Tableau / Power BI Dashboards** for real-time monitoring.  
+📬 Automate **personalized retention campaigns**.  
+📈 Deploy on a **cloud-based dashboard** for live insights.
+
+---
+
+## 👨‍💻 Author
+
+| 👤 Name | 🎓 Details |
+|----------|------------|
+| **Krishna Goyal** | B.Tech ECE • Data & Business Enthusiast |
+| 💼 *Interests* | Data Analytics, Business Intelligence, Customer Insights |
+| 🌐 *LinkedIn* | [linkedin.com/in/krishna-goyal](https://linkedin.com) |
+
+---
+
+## 🏆 Acknowledgments
+Special thanks to open-source datasets and mentors who guided this project.  
+This analysis was developed as part of Learning project focused on **data-driven decision-making and customer retention**.
+
+---
+
