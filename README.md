@@ -109,7 +109,7 @@ It aims to help businesses **retain customers**, **reduce losses**, and **increa
 |----------|------------|
 | **Krishna Goyal** | B.Tech ECE • Data & Business Enthusiast |
 | 💼 *Interests* | Data Analytics, Business Intelligence, Customer Insights |
-| 🌐 *LinkedIn* | [linkedin.com/in/krishna-goyal](https://linkedin.com) |
+| 🌐 *LinkedIn* | [[linkedin.com/in/krishna-goyal](https://linkedin.com)](https://www.linkedin.com/in/krishna-goyal-500435288/) |
 
 ---
 
