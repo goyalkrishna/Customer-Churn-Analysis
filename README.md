@@ -48,10 +48,10 @@ It aims to help businesses **retain customers**, **reduce losses**, and **increa
 
 | Visualization | Description |
 |----------------|-------------|
-| ![Churn Distribution](https://quickchart.io/chart/render/sf-fake1) | Overall churn vs active customer ratio. |
-| ![Contract vs Churn](https://quickchart.io/chart/render/sf-fake2) | Month-to-month contracts dominate churn. |
-| ![Tenure Impact](https://quickchart.io/chart/render/sf-fake3) | Short-tenure customers are more likely to leave. |
-| ![Payment Method](https://quickchart.io/chart/render/sf-fake4) | Electronic check users churn more. |
+| ![Churn Distribution](https://github.com/goyalkrishna/Customer-Churn-Analysis/blob/main/Churn%20Ratio.png) | Overall churn vs active customer ratio. |
+| ![Contract vs Churn](https://github.com/goyalkrishna/Customer-Churn-Analysis/blob/main/Churn%20by%20Contract.png) | Month-to-month contracts dominate churn. |
+| ![Tenure Impact](https://github.com/goyalkrishna/Customer-Churn-Analysis/blob/main/Tenure%20Impact.png) | Short-tenure customers are more likely to leave. |
+| ![Payment Method](https://github.com/goyalkrishna/Customer-Churn-Analysis/blob/main/Churn%20by%20Payment%20Method.png) | Electronic check users churn more. |
 
 > 🧩 *These visuals demonstrate patterns in the dataset. You can replace links with your actual chart URLs or images.*
 
